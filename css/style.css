@@ -1,5 +1,45 @@
 html, body {
-			background-color: #ffffff;
-			overflow: hidden;
-			cursor: pointer;
-		}
+	background-color: #ffffff;
+	overflow: hidden;
+	cursor: pointer;
+	margin: 0;
+}
+
+#blocker {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background: #9dceff;
+}
+
+.clickable {
+	overflow: hidden;
+	display: block;
+	position: relative;
+	padding: 0.2em 0;
+	cursor: pointer;
+}
+
+.clickable::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.1em;
+	background-color: hotpink;
+	transition: opacity 300ms, transform 300ms;
+	opacity: 1;
+	transform: translate3d(-100%, 0, 0);
+}
+
+.clickable:hover::after,
+.clickable:focus::after {
+	transform: translate3d(0, 0, 0);
+}
