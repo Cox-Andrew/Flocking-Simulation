@@ -1,7 +1,7 @@
 # Starling-Simulation
 Flocking simulation of starling murmuration using web graphics library (webGL) and openGL shader language in javascript.
 
-> **Checkout the [demo](https://techcentaur.github.io/Flocking-Simulation/index.html#64) here**
+> **Checkout the [demo](https://cox-andrew.github.io/Flocking-Simulation/) here**
 
 ![Flocking Simulation](img/flocking.png)
 
