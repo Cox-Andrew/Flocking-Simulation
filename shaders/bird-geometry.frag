@@ -1,9 +1,9 @@
 // fragment shader for the design and geometry of boids. JSON exporter from Blender - three.js (flaps problem)
-uniform vec3 color;
-varying vec4 vertexcolors;
-varying float zcoordinate;
+
+varying vec4 vertex_color;
+varying float zcoordi;
 
 void main() {
-	float z = 0.2 + (1000. - zcoordinate)/1000. * vertexcolors.x;
+	float z = 0.2 + (1000. - zcoordi) / 1000. * vertex_color.x;
 	gl_FragColor = vec4(z, z, z, 1.);
 }
